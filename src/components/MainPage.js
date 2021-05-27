@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     seaction:{
         marginTop: 40,
         height: 500,
-        border: '2px solid black'
+        border: '2px solid black',
     },
     root:{
         marginTop: 40,

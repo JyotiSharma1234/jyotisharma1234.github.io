@@ -11,7 +11,7 @@ import ComputerIcon from '@material-ui/icons/ComputerRounded';
 import BlogIcon from '@material-ui/icons/SubjectRounded';
 import AppsIcon from '@material-ui/icons/Apps'
 import Tooltip from '@material-ui/core/Tooltip';
-
+import {Brightness6} from '@material-ui/icons'
 const useStyles = makeStyles((theme) => ({
     header:{
         position: 'fixed',
@@ -20,9 +20,9 @@ const useStyles = makeStyles((theme) => ({
         padding: 10,
         margin: 0,
         listStyle: 'none',
-        border: '2px solid blue',
+        border: '2px solid #148fdb',
         borderRadius: '40px',
-        backgroundColor: 'blue',
+        backgroundColor: '#148fdb',
     },
     account:{
         color: 'white',
@@ -32,6 +32,7 @@ const useStyles = makeStyles((theme) => ({
         '&:hover': {
             color: 'white',
             border: '2px solid white',
+            background: 'linear-gradient(45deg, #20FCE2, #0679DF)'
         }
     }
 }));
@@ -39,26 +40,26 @@ const useStyles = makeStyles((theme) => ({
 const LightTooltip = withStyles((theme) => ({
   tooltip: {
     backgroundColor: 'white',
-    color: 'blue',
+    color: '#148fdb',
     textDecoration: 'bold',
     fontWeight: 600,
     boxShadow: theme.shadows[1],
     padding: 15,
     borderRadius: '4px 20px',
     fontSize: 16,
-    border: '2px solid blue',
+    border: '2px solid #148fdb',
   },
 }))(Tooltip);
 
 const Headers = (props) => {
     const classes = useStyles();
-
+    const {toggleTheme, theme} = props
         return (
                 <ul className={classes.header}>
                     <li>
                         <Link activeClass="active" to="about" spy={true} smooth={true}>
                         <LightTooltip placement="right" title="About Me">
-                            <IconButton size='20' className={classes.btn}>
+                            <IconButton className={classes.btn}>
                                 <AccountIcon className={classes.account}/>
                             </IconButton>
                         </LightTooltip>
@@ -67,7 +68,7 @@ const Headers = (props) => {
                     <li>
                         <Link  to="skills" spy={true} smooth={true}>
                             <LightTooltip placement="right" title="Skills">
-                                <IconButton size='20' className={classes.btn}>
+                                <IconButton className={classes.btn}>
                                     <ComputerIcon className={classes.account}/>
                                 </IconButton>
                             </LightTooltip>
@@ -76,7 +77,7 @@ const Headers = (props) => {
                     <li>
                         <Link  to="projects" spy={true} smooth={true}>
                             <LightTooltip placement="right" title="Projects">
-                                <IconButton size='20' className={classes.btn}>
+                                <IconButton className={classes.btn}>
                                     <AppsIcon className={classes.account}/>
                                 </IconButton>
                             </LightTooltip>
@@ -85,7 +86,7 @@ const Headers = (props) => {
                     <li>
                         <Link  to="blogs" spy={true} smooth={true}>
                             <LightTooltip placement="right" title="Blogs">
-                                <IconButton size='20' className={classes.btn}>
+                                <IconButton className={classes.btn}>
                                     <BlogIcon className={classes.account}/>
                                 </IconButton>
                             </LightTooltip>
@@ -94,11 +95,18 @@ const Headers = (props) => {
                     <li>
                         <Link  to="contact" spy={true} smooth={true}>
                             <LightTooltip placement="right" title="Contact Me">
-                                <IconButton size='20' className={classes.btn}>
+                                <IconButton className={classes.btn}>
                                     <ContactIcon className={classes.account}/>
                                 </IconButton>
                             </LightTooltip>
                         </Link>
+                    </li>
+                    <li>
+                        <LightTooltip placement="right" title={theme === 'light' ? "Dark Mode" : 'Light Mode'}>
+                            <IconButton onClick={toggleTheme} className={classes.btn}>
+                                <Brightness6 className={classes.account}/>
+                            </IconButton>
+                        </LightTooltip>
                     </li>
                 </ul>
         )
