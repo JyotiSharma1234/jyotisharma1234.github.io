@@ -1,13 +1,13 @@
-import { React, useState} from 'react'
+import { React } from 'react'
 import './App.css';
+import Headers from './components/Headers'
+import MainPage from './components/MainPage'
 
 function App() {
-
     return (
         <div className="App">
-            <header className="App-header">
-                Hello
-            </header>
+            <Headers/>
+            <MainPage className="content"/>
         </div>
     );
 }
