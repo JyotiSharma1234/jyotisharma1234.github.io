@@ -2,6 +2,7 @@ import React from 'react'
 import {
     makeStyles,
 } from "@material-ui/core";
+import ContactMe from './ContactMe';
 
 const useStyles = makeStyles((theme) => ({
     seaction:{
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
 
 const MainPage = (props) => {
     const classes = useStyles();
+    const { theme } = props;
 
     return (
         <div className={classes.root}>
@@ -36,8 +38,7 @@ const MainPage = (props) => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
             </div>
             <div id="contact" className={classes.seaction}>
-                <h1>Contact</h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
+                <ContactMe theme={theme}/>
             </div>
         </div>
         )

@@ -19,7 +19,7 @@ function App() {
             <GlobalStyles />
             <div className="App">
                 <Headers theme={theme} toggleTheme={themeToggler}/>
-                <MainPage className="content"/>
+                <MainPage theme={theme} className="content"/>
             </div>
         </ThemeProvider>
     );
