@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useEffect, useState } from 'react'
 import {Link} from 'react-scroll'
 import {
     IconButton,
@@ -12,6 +12,7 @@ import BlogIcon from '@material-ui/icons/SubjectRounded';
 import AppsIcon from '@material-ui/icons/Apps'
 import Tooltip from '@material-ui/core/Tooltip';
 import {Brightness6} from '@material-ui/icons'
+import Menu from './Menu'
 const useStyles = makeStyles((theme) => ({
     header:{
         position: 'fixed',
@@ -24,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: '40px',
         backgroundColor: '#148fdb',
     },
-    account:{
+    icon:{
         color: 'white',
     },
     btn: {
@@ -34,6 +35,18 @@ const useStyles = makeStyles((theme) => ({
             border: '2px solid white',
             background: 'linear-gradient(45deg, #20FCE2, #0679DF)'
         }
+    },
+    menu: {
+        position: 'fixed',
+        top: 4,
+        left: 0,
+        padding: 18,
+        margin: 0,
+        listStyle: 'none',
+        border: '2px solid #148fdb',
+        backgroundColor: '#148fdb',
+        borderRadius: '0px 20px 20px 0px',
+
     }
 }));
 
@@ -54,61 +67,84 @@ const LightTooltip = withStyles((theme) => ({
 const Headers = (props) => {
     const classes = useStyles();
     const {toggleTheme, theme} = props
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 720)
+
+    const handleResize = () => {
+        if (window.innerWidth < 720) {
+            setIsMobile(true)
+        } else {
+            setIsMobile(false)
+        }
+    }
+
+    // create an event listener
+    useEffect(() => {
+        window.addEventListener("resize", handleResize)
+    })
+
         return (
-                <ul className={classes.header}>
-                    <li>
-                        <Link activeClass="active" to="about" spy={true} smooth={true}>
-                        <LightTooltip placement="right" title="About Me">
-                            <IconButton className={classes.btn}>
-                                <AccountIcon className={classes.account}/>
-                            </IconButton>
-                        </LightTooltip>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link  to="skills" spy={true} smooth={true}>
-                            <LightTooltip placement="right" title="Skills">
+            <>
+                {!isMobile &&
+                    <ul className={classes.header}>
+                        <li>
+                            <Link to="about" spy={true} smooth={true}>
+                            <LightTooltip placement="right" title="About Me">
                                 <IconButton className={classes.btn}>
-                                    <ComputerIcon className={classes.account}/>
+                                    <AccountIcon className={classes.icon}/>
                                 </IconButton>
                             </LightTooltip>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link  to="projects" spy={true} smooth={true}>
-                            <LightTooltip placement="right" title="Projects">
-                                <IconButton className={classes.btn}>
-                                    <AppsIcon className={classes.account}/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link  to="skills" spy={true} smooth={true}>
+                                <LightTooltip placement="right" title="Skills">
+                                    <IconButton className={classes.btn}>
+                                        <ComputerIcon className={classes.icon}/>
+                                    </IconButton>
+                                </LightTooltip>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link  to="projects" spy={true} smooth={true}>
+                                <LightTooltip placement="right" title="Projects">
+                                    <IconButton className={classes.btn}>
+                                        <AppsIcon className={classes.icon}/>
+                                    </IconButton>
+                                </LightTooltip>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link  to="blogs" spy={true} smooth={true}>
+                                <LightTooltip placement="right" title="Blogs">
+                                    <IconButton className={classes.btn}>
+                                        <BlogIcon className={classes.icon}/>
+                                    </IconButton>
+                                </LightTooltip>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link  to="contact" spy={true} smooth={true}>
+                                <LightTooltip placement="right" title="Contact Me">
+                                    <IconButton className={classes.btn}>
+                                        <ContactIcon className={classes.icon}/>
+                                    </IconButton>
+                                </LightTooltip>
+                            </Link>
+                        </li>
+                        <li>
+                            <LightTooltip placement="right" title={theme === 'light' ? "Dark Mode" : 'Light Mode'}>
+                                <IconButton onClick={toggleTheme} className={classes.btn}>
+                                    <Brightness6 className={classes.icon}/>
                                 </IconButton>
                             </LightTooltip>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link  to="blogs" spy={true} smooth={true}>
-                            <LightTooltip placement="right" title="Blogs">
-                                <IconButton className={classes.btn}>
-                                    <BlogIcon className={classes.account}/>
-                                </IconButton>
-                            </LightTooltip>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link  to="contact" spy={true} smooth={true}>
-                            <LightTooltip placement="right" title="Contact Me">
-                                <IconButton className={classes.btn}>
-                                    <ContactIcon className={classes.account}/>
-                                </IconButton>
-                            </LightTooltip>
-                        </Link>
-                    </li>
-                    <li>
-                        <LightTooltip placement="right" title={theme === 'light' ? "Dark Mode" : 'Light Mode'}>
-                            <IconButton onClick={toggleTheme} className={classes.btn}>
-                                <Brightness6 className={classes.account}/>
-                            </IconButton>
-                        </LightTooltip>
-                    </li>
+                        </li>
                 </ul>
+            }
+                <div className={isMobile ? '' :classes.menu}>
+                    <Menu theme={theme} toggleTheme={toggleTheme}/>
+                </div>
+            </>
         )
 }
 
