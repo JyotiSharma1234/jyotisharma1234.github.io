@@ -106,7 +106,7 @@ const Headers = (props) => {
                             </Link>
                         </li>
                         <li>
-                            <Link  to="projects" spy={true} smooth={true}>
+                            <Link to="projects" spy={true} smooth={true}>
                                 <LightTooltip placement="right" title="Projects">
                                     <IconButton className={classes.btn}>
                                         <AppsIcon className={classes.icon}/>

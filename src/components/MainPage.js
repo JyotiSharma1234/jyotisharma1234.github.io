@@ -4,11 +4,12 @@ import {
 } from "@material-ui/core";
 import ContactMe from './ContactMe';
 import Skills from './Skills';
+import About from './About';
 
 const useStyles = makeStyles((theme) => ({
     seaction:{
         marginTop: 40,
-        border: '2px solid black',
+        minHeight: 700,
     },
     root:{
         marginTop: 40,
@@ -22,8 +23,7 @@ const MainPage = (props) => {
     return (
         <div className={classes.root}>
             <div id="about" className={classes.seaction}>
-                <h1>About Me</h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
+                <About/>
             </div>
             <div id="skills" className={classes.seaction}>
                 <Skills/>
