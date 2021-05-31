@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
     Box,
     Link,
@@ -47,40 +47,38 @@ const ContactMe = (props) => {
 
     return (
         <Box className={classes.root}>
+            <Box className={classes.heading}>
+                Get in Touch
+            </Box>
             <Box>
-                <Box className={classes.heading}>
-                    Get in Touch
-                </Box>
-                <Box>
-                    <Typography className={classes.p}>
-                        Interested in learning more about me, my work or how we can collaborate on an upcoming project?
-                    </Typography>
+                <Typography className={classes.p}>
+                    Interested in learning more about me, my work or how we can collaborate on an upcoming project?
+                </Typography>
 
-                    <Typography className={classes.p}>
-                        Feel free to reach out anytime, I would be more than happy to chat.
-                    </Typography>
-                </Box>
+                <Typography className={classes.p}>
+                    Feel free to reach out anytime, I would be more than happy to chat.
+                </Typography>
+            </Box>
 
-                <Box marginTop='10'>
-                    <div>
+            <Box marginTop='10'>
+                <div>
 
-                        <Link href="mailto:sjyoti4321@gmail.com" className={classes.link} target="_blank">
-                            <IconButton >
-                                <MailIcon className={theme === 'light' ? classes.day : classes.night}/>
-                            </IconButton>
-                        </Link>
-                        <Link href="https://www.linkedin.com/in/jyoti-sharma8642/" className={classes.link} target="_blank">
-                            <IconButton >
-                                <LinkedInIcon className={theme === 'light' ? classes.day : classes.night}/>
-                            </IconButton>
-                        </Link>
-                        <Link href="https://github.com/JyotiSharma1234" className={classes.link} target="_blank">
-                            <IconButton >
-                                <GitHubIcon className={theme === 'light' ? classes.day : classes.night}/>
-                            </IconButton>
-                        </Link>
-                    </div>
-                </Box>
+                    <Link href="mailto:sjyoti4321@gmail.com" className={classes.link} target="_blank">
+                        <IconButton >
+                            <MailIcon className={theme === 'light' ? classes.day : classes.night}/>
+                        </IconButton>
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/jyoti-sharma8642/" className={classes.link} target="_blank">
+                        <IconButton >
+                            <LinkedInIcon className={theme === 'light' ? classes.day : classes.night}/>
+                        </IconButton>
+                    </Link>
+                    <Link href="https://github.com/JyotiSharma1234" className={classes.link} target="_blank">
+                        <IconButton >
+                            <GitHubIcon className={theme === 'light' ? classes.day : classes.night}/>
+                        </IconButton>
+                    </Link>
+                </div>
             </Box>
         </Box>
     );
