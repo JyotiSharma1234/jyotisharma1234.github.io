@@ -17,7 +17,6 @@ const useStyles = makeStyles((theme) => ({
         fontWeight: 'bold',
         textTransform: 'uppercase',
         marginBottom: 20,
-        paddingBottom: 20,
         position: 'relative',
         color: '#fff',
     },

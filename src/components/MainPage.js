@@ -5,6 +5,7 @@ import {
 import ContactMe from './ContactMe';
 import Skills from './Skills';
 import About from './About';
+import Blogs from './Blogs';
 import Certificates from './Certificates'
 const useStyles = makeStyles((theme) => ({
     seaction:{
@@ -23,23 +24,20 @@ const MainPage = (props) => {
     return (
         <div className={classes.root}>
             <div id="about" className={classes.seaction}>
-                <About/>
+                <About theme={theme}/>
             </div>
             <div id="skills" className={classes.seaction}>
-                <Skills/>
+                <Skills theme={theme}/>
             </div>
             <div id="projects" className={classes.seaction}>
                 <h1>Projects</h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
+                Coming soon...
             </div>
             <div id="blogs" className={classes.seaction}>
-                <h1>Blogs</h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, repellendus. Totam nihil similique a repellat minus dolor amet quasi. Corporis nulla quaerat iste, sed quasi ab dolorem maxime minima animi.
+                <Blogs theme={theme}/>
             </div>
-
             <div id="certificates" className={classes.seaction}>
-                <h1>Certificates</h1>
-                <Certificates/>
+                <Certificates theme={theme}/>
             </div>
             <div id="contact" className={classes.seaction}>
                 <ContactMe theme={theme}/>

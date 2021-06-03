@@ -36,7 +36,7 @@ const Skills = (props) => {
             <Box className={classes.skillcard}>
                 {skillsData.skillsList.map(function(skill, index){
                     return (
-                        <Box margin='5px'>
+                        <Box key={index} margin='5px'>
                             <img  title={skill.title} alt={skill.title} width='80px' height='80px' src={skill.src} />
                             <Typography>
                                 {skill.title}
@@ -51,7 +51,7 @@ const Skills = (props) => {
             <Box className={classes.skillcard}>
                 {skillsData.toolList.map(function(skill, index){
                     return (
-                        <Box margin='5px'>
+                        <Box key={index} margin='5px'>
                             <img  title={skill.title} alt={skill.title} width='80px' height='80px' src={skill.src} />
                             <Typography>
                                 {skill.title}
