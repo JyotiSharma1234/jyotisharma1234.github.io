@@ -1,13 +1,12 @@
 import React from 'react';
-
-import JQueryUdemy from '../../images/certificates/jquery_udemy.jpg'
-import JSBasicHackerRank from '../../images/certificates/javascript_basic_hackerrank.png'
-import ReactBasicHackerRank from '../../images/certificates/react_basic_hackerrank.png'
-import ProblemSolvingBasicHackerRank from '../../images/certificates/problem_solving_hackerrank.png'
-import ProblemSolvingIntermediateHackerRank from '../../images/certificates/problem_solving_hackerrank_intermediate.png'
-import PatOnBackSept2019 from '../../images/certificates/patonbacksept2019.jpg'
-import JavaBasicHackerrank from '../../images/certificates/java_basic_hackerrank.png'
-import AFScholarshipCertificate from '../../images/certificates/AFS.jpg'
+import JQueryUdemy from '../images/certificates/jquery_udemy.jpg'
+import JSBasicHackerRank from '../images/certificates/javascript_basic_hackerrank.png'
+import ReactBasicHackerRank from '../images/certificates/react_basic_hackerrank.png'
+import ProblemSolvingBasicHackerRank from '../images/certificates/problem_solving_hackerrank.png'
+import ProblemSolvingIntermediateHackerRank from '../images/certificates/problem_solving_hackerrank_intermediate.png'
+import PatOnBackSept2019 from '../images/certificates/patonbacksept2019.jpg'
+import JavaBasicHackerrank from '../images/certificates/java_basic_hackerrank.png'
+import AFScholarshipCertificate from '../images/certificates/AFS.jpg'
 
 let certificatesList = [
     {
