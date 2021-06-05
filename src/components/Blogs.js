@@ -14,7 +14,7 @@ import {
     IconButton,
 
 } from "@material-ui/core";
-import BlogUrls from '../content/BlogUrls'
+import BlogsList from '../content/BlogsList'
 import OpenInNew from '@material-ui/icons/OpenInNew'
 
 const useStyles = makeStyles((theme) => ({
@@ -120,7 +120,7 @@ const Blogs = (props) => {
                 I sometimes writes my technical thoughts and new learning. Have a look...
             </Typography>
             <Box className={classes.wrapper}>
-            { BlogUrls.map(function(blog) {
+            { BlogsList.map(function(blog) {
                 return (
                     <Card key={blog.index} className={classes.card}>
                         <CardActionArea>

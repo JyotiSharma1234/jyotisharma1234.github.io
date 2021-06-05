@@ -1,5 +1,5 @@
 import React from 'react';
-const BlogUrls = [
+const BlogsList = [
     {   
         index: 1,
         publishedOn: 'Aug 9, 2020',
@@ -37,4 +37,4 @@ const BlogUrls = [
     },
 ]
 
-export default BlogUrls;
+export default BlogsList;
