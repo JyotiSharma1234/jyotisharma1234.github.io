@@ -12,6 +12,8 @@ import BlogIcon from '@material-ui/icons/SubjectRounded';
 import AppsIcon from '@material-ui/icons/Apps'
 import Tooltip from '@material-ui/core/Tooltip';
 import {Brightness6} from '@material-ui/icons'
+import HomeIcon from '@material-ui/icons/Home';
+
 import Menu from './Menu'
 const useStyles = makeStyles((theme) => ({
     header:{
@@ -87,6 +89,15 @@ const Headers = (props) => {
             <>
                 {!isMobile &&
                     <ul className={classes.header}>
+                        <li>
+                            <Link to="home" spy={true} smooth={true}>
+                            <LightTooltip placement="right" title="Home">
+                                <IconButton className={classes.btn}>
+                                    <HomeIcon className={classes.icon}/>
+                                </IconButton>
+                            </LightTooltip>
+                            </Link>
+                        </li>
                         <li>
                             <Link to="about" spy={true} smooth={true}>
                             <LightTooltip placement="right" title="About Me">

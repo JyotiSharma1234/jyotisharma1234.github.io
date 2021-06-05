@@ -18,7 +18,6 @@ const useStyles = makeStyles((theme) => ({
         textTransform: 'uppercase',
         marginBottom: 20,
         position: 'relative',
-        color: '#fff',
     },
     wrapper: {
         display: 'flex',
