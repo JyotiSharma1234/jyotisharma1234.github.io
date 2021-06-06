@@ -7,10 +7,11 @@ import Skills from './Skills';
 import About from './About';
 import Blogs from './Blogs';
 import Certificates from './Certificates'
+import Home from './Home';
 const useStyles = makeStyles((theme) => ({
     seaction:{
-        marginTop: 40,
         minHeight: 700,
+        padding: 30,
     },
     root:{
         marginTop: 40,
@@ -23,6 +24,9 @@ const MainPage = (props) => {
 
     return (
         <div className={classes.root}>
+            <div id="about" className={classes.seaction}>
+                <Home theme={theme}/>
+            </div>
             <div id="about" className={classes.seaction}>
                 <About theme={theme}/>
             </div>
