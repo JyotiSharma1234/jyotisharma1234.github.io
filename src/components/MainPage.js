@@ -8,6 +8,7 @@ import About from './About';
 import Blogs from './Blogs';
 import Certificates from './Certificates'
 import Home from './Home';
+import Projects from './Projects';
 const useStyles = makeStyles((theme) => ({
     seaction:{
         minHeight: 700,
@@ -34,8 +35,7 @@ const MainPage = (props) => {
                 <Skills theme={theme}/>
             </div>
             <div id="projects" className={classes.seaction}>
-                <h1>Projects</h1>
-                Coming soon...
+                <Projects/>
             </div>
             <div id="blogs" className={classes.seaction}>
                 <Blogs theme={theme}/>
