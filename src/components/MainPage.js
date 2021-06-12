@@ -25,7 +25,7 @@ const MainPage = (props) => {
 
     return (
         <div className={classes.root}>
-            <div id="about" className={classes.seaction}>
+            <div id="home" className={classes.seaction}>
                 <Home theme={theme}/>
             </div>
             <div id="about" className={classes.seaction}>

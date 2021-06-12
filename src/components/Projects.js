@@ -21,9 +21,6 @@ const useStyles = makeStyles((theme, props) => ({
         width: 'auto',
         height: '-webkit-fill-available'
     },
-        // grey:{
-        //     color: '#888888'
-        // }
 }));
 
 const Projects = (props) => {
