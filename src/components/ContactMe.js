@@ -9,7 +9,7 @@ import {
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailIcon from '@material-ui/icons/Mail';
 import GitHubIcon from '@material-ui/icons/GitHub';
-
+import HireMe from './HireMeBtn'
 const useStyles = makeStyles((theme) => ({
     root: {
         margin: 20
@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: 20,
         paddingBottom: 20,
         position: 'relative',
+        fontWeight: 'bold',
     },
     p: {
         fontFamily: '"Open Sans", sans-serif',
@@ -58,10 +59,9 @@ const ContactMe = (props) => {
                     Feel free to reach out anytime, I would be more than happy to chat.
                 </Typography>
             </Box>
-
+            <HireMe/>
             <Box marginTop='10'>
                 <div>
-
                     <Link href="mailto:sjyoti4321@gmail.com" className={classes.link} target="_blank">
                         <IconButton >
                             <MailIcon className={theme === 'light' ? classes.day : classes.night}/>

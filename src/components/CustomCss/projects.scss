@@ -118,14 +118,14 @@ $color_grey_dark: #a2a2a2;
       color: $color_grey_dark;
       margin-top: 5px;
     }
-    .footer {
-      text-align: left;
-      display: flex;
-      justify-content: flex-end;
-      flex-direction: column;
-      margin-top: 10px;
-      align-items: baseline;
-    }
+    // .footer {
+    //   text-align: left;
+    //   display: flex;
+    //   justify-content: flex-end;
+    //   flex-direction: column;
+    //   margin-top: 10px;
+    //   align-items: baseline;
+    // }
     .technologies {
       text-align: left;
       display: flex;
@@ -202,18 +202,18 @@ $color_grey_dark: #a2a2a2;
         bottom: 0;
         z-index: -1;
       }
-      .footer {
-        text-align: left;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row;
-        margin-top: 10px;
-      }
-      .read-more {
-        text-align: right;
-        display: flex;
-        justify-content: flex-end;
-      }
+      // .footer {
+      //   text-align: left;
+      //   display: flex;
+      //   justify-content: space-between;
+      //   flex-direction: row;
+      //   margin-top: 10px;
+      // }
+      // .read-more {
+      //   text-align: right;
+      //   display: flex;
+      //   justify-content: flex-end;
+      // }
     }
 
     &.alt {

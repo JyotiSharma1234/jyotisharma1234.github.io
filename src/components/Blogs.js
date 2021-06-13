@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
         textTransform: 'uppercase',
         marginBottom: 20,
         position: 'relative',
+        fontWeight: 'bold',
     },
     p: {
         fontFamily: '"Open Sans", sans-serif',
@@ -57,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
         borderRadius: 10,
         '&:hover': {
             boxShadow: "0 12px 15px 0 rgba(20, 143, 219, 0.24)",
-            transform: `translate(0px, 10px) rotateX(20deg) rotateY(20deg)`
+            transform: `translate(0px, 10px)`
 
         },
         '& .MuiCardContent-root': {

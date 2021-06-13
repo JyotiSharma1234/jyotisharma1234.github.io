@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme, props) => ({
         textTransform: 'uppercase',
         marginBottom: 20,
         position: 'relative',
+        fontWeight: 'bold',
     },
     image:{
         width: 'auto',
@@ -64,15 +65,15 @@ const Projects = (props) => {
                             <h1>{project.title}</h1>
                             <h2>Opening a door to the future</h2>
                             <p> {project.description}</p>
-                            <div class="footer">
-                                {/* <div class="technologies"> */}
-                                {/* { project.technologies.map((tech,index)=>{
+                            <div>
+                                {/* <div class="technologies">
+                                { project.technologies.map((tech,index)=>{
                                     return(
                                         <img src={tech} width="40px" height="40px"/>
                                     )
                                 })
-                                } */}
-                                {/* </div> */}
+                                }
+                                </div> */}
                                 <p class="read-more">
                                     <a href={project.githubLink} title="Github link" target="_blank"><GitHubIcon/></a>
                                     <a href={project.url} title="Demo Link" target="_blank"><OpenInNew/></a>

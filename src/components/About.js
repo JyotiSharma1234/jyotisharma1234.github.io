@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
         margin: 20,
         marginRight: '10%',
         marginLeft: '10%',
+        animation: 'fadeIn 2s ease-out both',
     },
     heading:{
         textAlign: 'center',
@@ -20,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: 20,
         paddingBottom: 20,
         position: 'relative',
+        fontWeight: 'bold',
     },
     p: {
         fontFamily: '"Open Sans", sans-serif',

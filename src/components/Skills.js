@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
         marginTop: 20,
         paddingBottom: 20,
         position: 'relative',
+        fontWeight: 'bold',
     },
 }));
 
