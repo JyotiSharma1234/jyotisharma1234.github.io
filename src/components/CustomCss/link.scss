@@ -1,0 +1,84 @@
+:root {
+  --text: #2B3044;
+  --line: #BBC1E1;
+  --line-active: #275EFE;
+}
+
+p {
+  font-size: 18px;
+  margin: 0;
+  color: var(--text);
+  a {
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      color: inherit;
+      margin: 0 var(--spacing, 0px);
+      transition: margin .25s;
+      svg {
+          width: 76px;
+          height: 40px;
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          transform: translate(-50%, 7px) translateZ(0);
+          fill: none;
+          stroke: var(--stroke, var(--line));
+          stroke-linecap: round;
+          stroke-width: 2px;
+          stroke-dasharray: var(--offset, 69px) 278px;
+          stroke-dashoffset: 361px;
+          transition: stroke .25s ease var(--stroke-delay, 0s), stroke-dasharray .35s;
+      }
+      &:hover {
+          --spacing: 4px;
+          --stroke: var(--line-active);
+          --stroke-delay: .1s;
+          --offset: 180px;
+      }
+  }
+}
+
+// html {
+//   box-sizing: border-box;
+//   -webkit-font-smoothing: antialiased;
+// }
+
+// * {
+//   box-sizing: inherit;
+//   &:before,
+//   &:after {
+//       box-sizing: inherit;
+//   }
+// }
+
+// Center & dribbble
+// body {
+//   min-height: 100vh;
+//   display: flex;
+//   font-family: 'Inter', Arial;
+//   justify-content: center;
+//   align-items: center;
+//   background: #F6F8FF;
+  .dribbble {
+      position: fixed;
+      display: block;
+      right: 20px;
+      bottom: 20px;
+      img {
+          display: block;
+          height: 28px;
+      }
+  }
+  // .twitter {
+  //     position: fixed;
+  //     display: block;
+  //     right: 64px;
+  //     bottom: 14px;
+  //     svg {
+  //         width: 32px;
+  //         height: 32px;
+  //         fill: #1da1f2;
+  //     }
+  // }
+// }

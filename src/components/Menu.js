@@ -27,13 +27,12 @@ import StarIcon from '@material-ui/icons/Star'
 import ComputerIcon from '@material-ui/icons/ComputerRounded';
 import BlogIcon from '@material-ui/icons/SubjectRounded';
 import AppsIcon from '@material-ui/icons/Apps'
+import JyotiResume from '../content/JyotiResume.pdf'
+
 const useStyles = makeStyles({
     list: {
         width: 250,
         backgroundColor: 'rgba(0,0,0,0.0)'
-    },
-    fullList: {
-        width: 'auto',
     },
     dayMenuIcon: {
         position: 'fixed',
@@ -103,6 +102,17 @@ export default function Menu(props) {
         setIsMenuOpen( open );
     };
 
+    const downloadResume = () => {
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', JyotiResume);
+        linkElement.setAttribute('download', 'JyotiResume')
+        var clickEvent = new MouseEvent('click', {
+            bubbles: true,
+            cancelable: false,
+            view: window,
+        });
+        linkElement.dispatchEvent(clickEvent);
+    }
     const list = (anchor) => (
         <div
             className={clsx(classes.list)}
@@ -164,7 +174,7 @@ export default function Menu(props) {
                 </Link>
             </ListItem>
 
-            <ListItem className={classes.listItem}>
+            <ListItem className={classes.listItem} onClick={downloadResume}>
                 <ListItemIcon>
                     <ResumeIcon className={theme === 'light' ? classes.day : classes.night}/>
                 </ListItemIcon>

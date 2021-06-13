@@ -4,8 +4,9 @@ import {
     Box,
 } from "@material-ui/core";
 import './CustomCss/btn.scss'
+import './CustomCss/link.scss'
 import { Flipper, Flipped } from "react-flip-toolkit";
-
+import JyotiResume from '../content/JyotiResume.pdf'
 const useStyles = makeStyles((theme) => ({
 }));
 
@@ -25,7 +26,10 @@ const HireMeBtn = (props) => {
         toggleState();
         }
     }
-
+    const handleClick = (e) => {
+        e.preventDefault();
+        console.log('The link was clicked.');
+    };
     return(
         <Box display="flex" justifyContent='center' alignItems="center">
             <Flipper>
@@ -46,9 +50,19 @@ const HireMeBtn = (props) => {
                     Currently I not looking for a new opportunity.
                     If I find myself looking to make a change in the future, I’ll be sure to get in touch.
                     Do let me know about you..
-                    You can get my <strong>Resume</strong> here.
                     <br/>
                         Stay connected! Stay safe!
+                    </p>
+
+                    <p>
+                        You can get my &nbsp;
+                        <a href={JyotiResume} download>
+                            <strong> resume </strong>
+                            <svg viewBox="0 0 70 36">
+                                <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                            </svg>
+                        </a>
+                        &nbsp; here.
                     </p>
                     <button
                     className="button secondary content"
