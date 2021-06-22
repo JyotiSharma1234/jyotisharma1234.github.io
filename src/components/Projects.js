@@ -3,11 +3,11 @@ import {
     makeStyles,
     Box,
 } from "@material-ui/core";
-import ProjectsList from '../content/ProjectsList'
+import ProjectsData from '../content/ProjectsList'
 import './CustomCss/projects.scss'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import OpenInNew from '@material-ui/icons/OpenInNew'
-
+import OrganisationProjects from './OrganisationProjects'
 const useStyles = makeStyles((theme, props) => ({
 
     heading:{
@@ -31,9 +31,9 @@ const Projects = (props) => {
     return (
         <Box id="projects">
             <Box className={classes.heading}>
-                Projects
+                Personal Projects
             </Box>
-            { ProjectsList.map(function(project, index) {
+            { ProjectsData.personalProjectsList.map(function(project, index) {
                 return (
                     <div key={index} class={(index%2 == 0) ? "blog-card": "blog-card alt"} className={classes.grey}>
                         <div class="meta">
@@ -63,7 +63,7 @@ const Projects = (props) => {
                         </div>
                         <div class="description">
                             <h1>{project.title}</h1>
-                            <h2>Opening a door to the future</h2>
+                            <h2>{project.type}</h2>
                             <p> {project.description}</p>
                             <div>
                                 {/* <div class="technologies">
@@ -83,6 +83,11 @@ const Projects = (props) => {
                     </div>
                 )
             })}
+
+            <OrganisationProjects/>
+            <div>
+                More coming soon...
+            </div>
     </Box>
 );
 };
