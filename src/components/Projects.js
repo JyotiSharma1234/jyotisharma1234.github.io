@@ -38,7 +38,7 @@ const Projects = (props) => {
                     <div key={index} class={(index%2 == 0) ? "blog-card": "blog-card alt"} className={classes.grey}>
                         <div class="meta">
                             <Box class="photo">
-                                <img className={classes.image} title={project.title} src={project.image}/>
+                                <img className={classes.image} height='300px' width='392px' title={project.title} src={project.image}/>
                             </Box>
                             <ul class="details">
                                 <li class="author"><a href="#">{project.title}</a></li>
@@ -83,13 +83,13 @@ const Projects = (props) => {
                     </div>
                 )
             })}
-
-            <OrganisationProjects/>
             <div>
                 More coming soon...
             </div>
-    </Box>
-);
+
+            <OrganisationProjects/>
+        </Box>
+    );
 };
 
 export default Projects;

@@ -3,16 +3,25 @@ import {
     makeStyles,
     Box,
 } from "@material-ui/core";
+import HireMe from './HireMeBtn'
 
 const useStyles = makeStyles((theme) => ({
+    root: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: 'column'
+    }
 }));
 
 const Home = (props) => {
     const classes = useStyles();
 
     return(
-        <Box display="flex" flexDirection="row" alignItems="center">
+        <Box className={classes.root}>
                 <h1>Jyoti Sharma</h1>
+            <HireMe/>
+
         </Box>
     )
 }
