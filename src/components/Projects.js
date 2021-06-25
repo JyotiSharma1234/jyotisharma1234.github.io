@@ -22,6 +22,9 @@ const useStyles = makeStyles((theme, props) => ({
         width: 'auto',
         height: '-webkit-fill-available'
     },
+    more: {
+        padding: 16,    
+    }
 }));
 
 const Projects = (props) => {
@@ -31,7 +34,7 @@ const Projects = (props) => {
     return (
         <Box id="projects">
             <Box className={classes.heading}>
-                Personal Projects
+                Projects
             </Box>
             { ProjectsData.personalProjectsList.map(function(project, index) {
                 return (
@@ -83,11 +86,11 @@ const Projects = (props) => {
                     </div>
                 )
             })}
-            <div>
+            <div className={classes.more}>
                 More coming soon...
             </div>
 
-            <OrganisationProjects/>
+            {/* <OrganisationProjects/> */}
         </Box>
     );
 };

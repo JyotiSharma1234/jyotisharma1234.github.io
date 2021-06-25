@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
         marginRight: '10%',
         marginLeft: '10%',
         animation: 'fadeIn 2s ease-out both',
+        ['@media (max-width:780px)']: {
+            marginRight: '0%',
+        },
     },
     heading:{
         textAlign: 'center',
@@ -28,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 20,
         marginTop: 20,
         marginBottom: 20,
+        fontWeight: 600,
     },
     link:{
         color: 'inherit',
@@ -41,7 +45,6 @@ const useStyles = makeStyles((theme) => ({
             display: 'flex',
             flexWrap: 'nowrap',
         },
-        // backgroundImage: `url(${JyotiPic})`,
     },
     pic:{
         borderRadius: 60,
@@ -53,8 +56,10 @@ const useStyles = makeStyles((theme) => ({
     },
     image: {
         borderRadius: 60,
-        height: 450,
-        width: 350,
+        // height: 450,
+        // width: 350,
+        width: 360,
+        height: 540,
         objectFit: 'cover',
     },
     content: {
@@ -84,7 +89,10 @@ const About = (props) => {
                             Hello, I am Jyoti Sharma, a web developer, post graduated in Computer Science from <MaterialLink className={classes.link} href="https://www.fergusson.edu/" target='_blank'> Fergusson College</MaterialLink>, Pune ,India.
                         </Typography>
                         <Typography variant="body2" className={classes.p} gutterBottom>
-                            I am <MaterialLink href="https://ugcnet.nta.nic.in/" target="_blank" className={classes.link}>UGC-NET</MaterialLink> qualified, that means I am officially eligible for being an assistant professor anywhere in India.
+                            I keep my work practical, relevant and creative.
+                        </Typography>
+                        <Typography variant="body2" className={classes.p} gutterBottom>
+                            I love teaching and coaching. I am <MaterialLink href="https://ugcnet.nta.nic.in/" target="_blank" className={classes.link}>UGC-NET</MaterialLink> qualified, that means I am officially eligible for being an assistant professor anywhere in India.
                             Also, I am HTET (PGT) qualified, eligible for PGT teacher in Haryana, India.
                         </Typography>
                         <Typography variant="body2" className={classes.p} gutterBottom>

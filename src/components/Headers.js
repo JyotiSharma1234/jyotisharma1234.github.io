@@ -86,7 +86,7 @@ const Headers = (props) => {
     })
 
         return (
-            <>
+            <header>
                 {!isMobile &&
                     <ul className={classes.header}>
                         <li>
@@ -155,7 +155,7 @@ const Headers = (props) => {
                 <div className={isMobile ? '' :classes.menu}>
                     <Menu theme={theme} toggleTheme={toggleTheme}/>
                 </div>
-            </>
+            </header>
         )
 }
 

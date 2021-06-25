@@ -1,17 +1,50 @@
 import React from "react";
 import {
     makeStyles,
-    Box,
+    Box, Typography,
 } from "@material-ui/core";
-import HireMe from './HireMeBtn'
+import NameSection from "./NameSection";
 
+import JyotiPic from '../images/jyotiPic.jpg'
+import TechBg from '../images/techbg2.png'
 const useStyles = makeStyles((theme) => ({
     root: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexDirection: 'column'
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: 'column',
+        // animation: 'fadeIn 2s ease-out both',
+        backgroundImage: `url(${TechBg})`,
+        backgroundSize: 'cover',
+        height: '100vh',
+    },
+    container:{
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        ['@media (min-width:780px)']: {
+            display: 'flex',
+            flexWrap: 'nowrap',
+        },
+    },
+    pic:{
+        borderRadius: 60,
+        backgroundSize: 'cover',
+    },
+    image: {
+        borderRadius: 60,
+        height: 450,
+        width: 350,
+        objectFit: 'cover',
+    },
+    content: {
+        textAlign: 'left',
+        paddingLeft: 20,
+        ['@media (min-width:780px)']: {
+            paddingLeft: 10
+        },
     }
+
 }));
 
 const Home = (props) => {
@@ -19,9 +52,9 @@ const Home = (props) => {
 
     return(
         <Box className={classes.root}>
-                <h1>Jyoti Sharma</h1>
-            <HireMe/>
-
+            <Box className={classes.container}>
+                <NameSection/>
+            </Box>
         </Box>
     )
 }

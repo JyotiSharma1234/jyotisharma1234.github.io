@@ -10,6 +10,8 @@ import AntDesign from '../images/TechStack/AntDesign.png'
 import PostgreSQL from '../images/TechStack/PostgreSQL.png'
 import GatsBy from '../images/TechStack/Gatsby.png'
 
+
+import Portfolio from '../images/Projects/portfolio.png'
 import TambolaPic from '../images/Projects/tambola.png'
 import StackEcho from '../images/Projects/StackEcho.png'
 import Scalefusion from '../images/Projects/scalefusion.png'
@@ -21,6 +23,7 @@ const personalProjectsList = [
     {
         title: 'Personal Portfolio',
         technologies: [ReactJS, MaterialUI],
+        image: Portfolio,
         description: 'This project is a portfolio website. This website incorporates all details about my skills, journey, education, projects and interests.',
         url: 'https://jyotisharma1234.github.io/',
         githubLink: 'https://github.com/JyotiSharma1234/',

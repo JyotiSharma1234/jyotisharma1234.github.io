@@ -1,7 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
 
 .typing_effect {
   font-family: "Lucida Console", "Courier New", monospace;
   font-weight:100;
   font-size:26px;
   text-align: center;
+}
+
+/* Custom CSS for namesection.js */
+.name {
+  color: #148fdb;
+  font-size: 67px;
+  font-family: 'Pacifico';
+  letter-spacing: 2px;
+}
+.web-dev {
+  font-size: 24px;
+  font-family: "Lucida Console", "Courier New", monospace;
 }
