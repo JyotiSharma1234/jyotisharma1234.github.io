@@ -4,9 +4,8 @@ import {
     Box, Typography,
 } from "@material-ui/core";
 import NameSection from "./NameSection";
-
-import JyotiPic from '../images/jyotiPic.jpg'
 import TechBg from '../images/techbg2.png'
+
 const useStyles = makeStyles((theme) => ({
     root: {
         display: "flex",
@@ -27,24 +26,6 @@ const useStyles = makeStyles((theme) => ({
             flexWrap: 'nowrap',
         },
     },
-    pic:{
-        borderRadius: 60,
-        backgroundSize: 'cover',
-    },
-    image: {
-        borderRadius: 60,
-        height: 450,
-        width: 350,
-        objectFit: 'cover',
-    },
-    content: {
-        textAlign: 'left',
-        paddingLeft: 20,
-        ['@media (min-width:780px)']: {
-            paddingLeft: 10
-        },
-    }
-
 }));
 
 const Home = (props) => {

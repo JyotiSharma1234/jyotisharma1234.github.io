@@ -89,7 +89,7 @@ const HireMeBtn = (props) => {
                     onKeyDown={keydownHandler}
                 >
                     <Flipped flipId="action">
-                    <span className="action">Hire Me</span>
+                    <span className="action">Are you hiring?</span>
                     </Flipped>
                 </div>
                 </Flipped>
