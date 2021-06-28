@@ -29,7 +29,7 @@ const MainPage = (props) => {
     }, []);
 
     const notify = () => {
-        axios.post("https://formsubmit.co/sjyoti4321@gmail.com", {msg: "Someone opened your portfolio website"})
+        axios.post("https://formsubmit.co/sjyoti4321@gmail.com", {msg: `Someone opened your portfolio website at ${new Date()}`})
         .then(response => {
         })
             .catch(function (error) {
