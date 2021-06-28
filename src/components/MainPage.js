@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {
     makeStyles,
 } from "@material-ui/core";
@@ -9,6 +9,7 @@ import Blogs from './Blogs';
 import Certificates from './Certificates'
 import Home from './Home';
 import Projects from './Projects';
+import axios from 'axios'
 const useStyles = makeStyles((theme) => ({
     seaction:{
         minHeight: 700,
@@ -22,6 +23,19 @@ const useStyles = makeStyles((theme) => ({
 const MainPage = (props) => {
     const classes = useStyles();
     const { theme } = props;
+
+    useEffect(() => {
+        notify();
+    }, []);
+
+    const notify = () => {
+        http.post("https://formsubmit.co/jsharma8642@gmail.com", {msg: "Someone opened your portfolio website"})
+        .then(response => {
+        })
+            .catch(function (error) {
+                console.log('ERROR IN RESPONSE: ', error);
+            });
+    }
 
     return (
         <div>

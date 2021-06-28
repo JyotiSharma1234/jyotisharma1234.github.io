@@ -92,7 +92,7 @@ const About = (props) => {
                             I keep my work practical, relevant and creative.
                         </Typography>
                         <Typography variant="body2" className={classes.p} gutterBottom>
-                            I love teaching and coaching. I am <MaterialLink href="https://ugcnet.nta.nic.in/" target="_blank" className={classes.link}>UGC-NET</MaterialLink> qualified, that means I am officially eligible for being an assistant professor anywhere in India.
+                            I love teaching and coaching. I am <MaterialLink href="https://ugcnet.nta.nic.in/" target="_blank" className={classes.link}>UGC-NET</MaterialLink> qualified, I am officially eligible for being an assistant professor anywhere in India.
                             Also, I am HTET (PGT) qualified, eligible for PGT teacher in Haryana, India.
                         </Typography>
                         <Typography variant="body2" className={classes.p} gutterBottom>

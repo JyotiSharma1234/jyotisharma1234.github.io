@@ -44,17 +44,17 @@ const Projects = (props) => {
                                 <img className={classes.image} height='300px' width='392px' title={project.title} src={project.image}/>
                             </Box>
                             <ul class="details">
-                                <li class="author"><a href="#">{project.title}</a></li>
+                                <li className="author"><a href="#">{project.title}</a></li>
                                 {/* <li class="date">Aug. 24, 2015</li> */}
-                                <li class="tags">
-                                <div class="technologies">
-                                { project.technologies.map((tech,index)=>{
-                                    return(
-                                        <img src={tech} width="40px" height="40px"/>
-                                    )
-                                })
-                                }
-                                </div>
+                                <li className="tags">
+                                    <div className="technologies">
+                                    { project.technologies.map((tech,index)=>{
+                                        return(
+                                            <img src={tech} width="40px" height="40px"/>
+                                        )
+                                    })
+                                    }
+                                    </div>
                                 {/* <ul>
                                     <li><a href="#">{index}</a></li>
                                     <li><a href="#">Code</a></li>
@@ -64,7 +64,7 @@ const Projects = (props) => {
                                 </li>
                             </ul>
                         </div>
-                        <div class="description">
+                        <div className="description">
                             <h1>{project.title}</h1>
                             <h2>{project.type}</h2>
                             <p> {project.description}</p>
@@ -77,7 +77,7 @@ const Projects = (props) => {
                                 })
                                 }
                                 </div> */}
-                                <p class="read-more">
+                                <p className="read-more">
                                     <a href={project.githubLink} title="Github link" target="_blank"><GitHubIcon/></a>
                                     <a href={project.url} title="Demo Link" target="_blank"><OpenInNew/></a>
                                 </p>
