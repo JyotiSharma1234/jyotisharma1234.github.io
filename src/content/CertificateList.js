@@ -7,7 +7,7 @@ import ProblemSolvingIntermediateHackerRank from '../images/certificates/problem
 import PatOnBackSept2019 from '../images/certificates/patonbacksept2019.jpg'
 import JavaBasicHackerrank from '../images/certificates/java_basic_hackerrank.png'
 import AFScholarshipCertificate from '../images/certificates/AFS.jpg'
-
+import TechGigGeekGoddess2020Semifinalist from '../images/certificates/TechGig_Geek_Goddess_2020_Semifinalist.png'
 let certificatesList = [
     {
         index: 0,
@@ -65,6 +65,14 @@ let certificatesList = [
         title: 'Java Basic',
         description: 'Java (Basic) from Hackerrank'
     },
+    {
+        index: 8,
+        path: TechGigGeekGoddess2020Semifinalist,
+        src: TechGigGeekGoddess2020Semifinalist,
+        title: 'TechGig GeekGoddess 2020 Semifinalist',
+        description: 'TechGig GeekGoddess 2020 Semifinalist'
+    },
+    
 ]
 
 export default certificatesList;

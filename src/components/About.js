@@ -7,6 +7,8 @@ import {
 import MaterialLink from '@material-ui/core/Link'
 import {Link} from 'react-scroll'
 import JyotiPic from '../images/jyotiPic.jpg'
+import clsx from 'clsx';
+
 const useStyles = makeStyles((theme) => ({
     root: {
         margin: 20,
@@ -32,6 +34,9 @@ const useStyles = makeStyles((theme) => ({
         marginTop: 20,
         marginBottom: 20,
         fontWeight: 600,
+    },
+    primary:{
+        color: '#148fdb'
     },
     link:{
         color: 'inherit',
@@ -106,7 +111,7 @@ const About = (props) => {
                             I started my career as a software Engineer in Jan 2018,<br/>
                             Have a look at my past <Link className={classes.link} to="projects" spy={true} smooth={true}>projects</Link>, and feel free to reach out with any questions.
                         </Typography>
-                        <Typography variant="body2" className={classes.p} gutterBottom>
+                        <Typography variant="body2" className={clsx(classes.p, classes.primary)} gutterBottom>
                             I strongly belives in <br/><b>"Making knowledge to stand out of crowd"</b>. <br/>
                         </Typography>
                     </Box>
