@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.9b7a3f71.chunk.css",
-    "main.js": "/static/js/main.ba1b1d86.chunk.js",
-    "main.js.map": "/static/js/main.ba1b1d86.chunk.js.map",
+    "main.js": "/static/js/main.f735ff02.chunk.js",
+    "main.js.map": "/static/js/main.f735ff02.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.52815186.js",
     "runtime-main.js.map": "/static/js/runtime-main.52815186.js.map",
     "static/css/2.57627082.chunk.css": "/static/css/2.57627082.chunk.css",
@@ -28,6 +28,7 @@
     "static/media/ReactJS.5efd23ae.png": "/static/media/ReactJS.5efd23ae.png",
     "static/media/Ruby.3d0cca44.png": "/static/media/Ruby.3d0cca44.png",
     "static/media/StackEcho.e5238c68.png": "/static/media/StackEcho.e5238c68.png",
+    "static/media/TechGig_Geek_Goddess_2020_Semifinalist.17e056d6.png": "/static/media/TechGig_Geek_Goddess_2020_Semifinalist.17e056d6.png",
     "static/media/VSCode.846946a3.png": "/static/media/VSCode.846946a3.png",
     "static/media/Vim.e5135cb2.png": "/static/media/Vim.e5135cb2.png",
     "static/media/daybg.d676add4.jpg": "/static/media/daybg.d676add4.jpg",
@@ -51,6 +52,6 @@
     "static/css/2.57627082.chunk.css",
     "static/js/2.9d883c75.chunk.js",
     "static/css/main.9b7a3f71.chunk.css",
-    "static/js/main.ba1b1d86.chunk.js"
+    "static/js/main.f735ff02.chunk.js"
   ]
 }
