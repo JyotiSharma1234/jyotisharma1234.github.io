@@ -9,11 +9,12 @@ import MaterialUI from '../images/TechStack/MaterialUI.png'
 import AntDesign from '../images/TechStack/AntDesign.png'
 import PostgreSQL from '../images/TechStack/PostgreSQL.png'
 import GatsBy from '../images/TechStack/Gatsby.png'
-
+import Chrome from '../images/TechStack/chrome.png'
 
 import Portfolio from '../images/Projects/portfolio.png'
 import TambolaPic from '../images/Projects/tambola.png'
 import StackEcho from '../images/Projects/StackEcho.png'
+import LinkAssitance from '../images/Projects/LinkAssitance.png'
 import Scalefusion from '../images/Projects/scalefusion.png'
 import EnglandHockey from '../images/Projects/englandHockey.jpeg'
 import TPN from '../images/Projects/tpn.jpg'
@@ -43,6 +44,15 @@ const personalProjectsList = [
         technologies: [GatsBy, ReactJS, AntDesign],
         image: StackEcho,
         description: 'My first trial project using Gatsby deployed on Gatsby cloud. A simple memory game to test your memorising power. Want to give it a try...',
+        url: 'https://stackechomaster.gatsbyjs.io/',
+        githubLink: 'https://github.com/JyotiSharma1234/stack-echo',
+        type: 'Game'
+    },
+    {
+        title: 'Link Assistance',
+        technologies: [ReactJS, MaterialUI, Chrome],
+        image: LinkAssitance,
+        description: 'A Google Chrome Extension, Link Assistance, which will generate a QR code for your link or data.',
         url: 'https://stackechomaster.gatsbyjs.io/',
         githubLink: 'https://github.com/JyotiSharma1234/stack-echo',
         type: 'Game'
