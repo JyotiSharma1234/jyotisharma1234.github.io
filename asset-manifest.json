@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.9b7a3f71.chunk.css",
-    "main.js": "/static/js/main.e3fdd17f.chunk.js",
-    "main.js.map": "/static/js/main.e3fdd17f.chunk.js.map",
+    "main.js": "/static/js/main.a5aa2e33.chunk.js",
+    "main.js.map": "/static/js/main.a5aa2e33.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.52815186.js",
     "runtime-main.js.map": "/static/js/runtime-main.52815186.js.map",
     "static/css/2.57627082.chunk.css": "/static/css/2.57627082.chunk.css",
@@ -21,7 +21,7 @@
     "static/media/Gatsby.7bec8c5f.png": "/static/media/Gatsby.7bec8c5f.png",
     "static/media/GitLab.a80704a8.png": "/static/media/GitLab.a80704a8.png",
     "static/media/Github.2ebaaead.png": "/static/media/Github.2ebaaead.png",
-    "static/media/JyotiResume.7a8a5806.pdf": "/static/media/JyotiResume.7a8a5806.pdf",
+    "static/media/JyotiResume.d3c80a1a.pdf": "/static/media/JyotiResume.d3c80a1a.pdf",
     "static/media/LinkAssitance.41be1702.png": "/static/media/LinkAssitance.41be1702.png",
     "static/media/Linux.a9e735d0.png": "/static/media/Linux.a9e735d0.png",
     "static/media/PostgreSQL.bc18d592.png": "/static/media/PostgreSQL.bc18d592.png",
@@ -54,6 +54,6 @@
     "static/css/2.57627082.chunk.css",
     "static/js/2.9d883c75.chunk.js",
     "static/css/main.9b7a3f71.chunk.css",
-    "static/js/main.e3fdd17f.chunk.js"
+    "static/js/main.a5aa2e33.chunk.js"
   ]
 }
