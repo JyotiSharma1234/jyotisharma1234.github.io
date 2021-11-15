@@ -79,7 +79,7 @@ const Projects = (props) => {
                                 </div> */}
                                 <p className="read-more">
                                     <a href={project.githubLink} title="Github link" target="_blank"><GitHubIcon/></a>
-                                    <a href={project.url} title="Demo Link" target="_blank"><OpenInNew/></a>
+                                    {project.url && <a href={project.url} title="Demo Link" target="_blank"><OpenInNew/></a>}
                                 </p>
                             </div>
                         </div>

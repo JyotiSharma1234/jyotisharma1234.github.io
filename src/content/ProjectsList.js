@@ -53,9 +53,8 @@ const personalProjectsList = [
         technologies: [ReactJS, MaterialUI, Chrome],
         image: LinkAssitance,
         description: 'A Google Chrome Extension, Link Assistance, which will generate a QR code for your link or data.',
-        url: 'https://stackechomaster.gatsbyjs.io/',
-        githubLink: 'https://github.com/JyotiSharma1234/stack-echo',
-        type: 'Game'
+        githubLink: 'https://github.com/JyotiSharma1234/link-assistant-react-app',
+        type: 'Chrome Extension'
     },
 ]
 
